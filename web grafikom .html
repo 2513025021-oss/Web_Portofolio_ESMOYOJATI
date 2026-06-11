@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Grafika Komputer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:white;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(
+135deg,
+#2563eb,
+#7c3aed
+);
+color:white;
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.hero h1{
+font-size:70px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:white;
+color:#2563eb;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* ABOUT */
+
+.about{
+padding:100px 10%;
+}
+
+.about-card{
+background:rgba(255,255,255,.7);
+backdrop-filter:blur(10px);
+border-radius:25px;
+padding:40px;
+display:flex;
+align-items:center;
+gap:40px;
+box-shadow:0 15px 30px rgba(0,0,0,.1);
+}
+
+.about img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #2563eb;
+}
+
+.about-text h2{
+font-size:35px;
+margin-bottom:15px;
+}
+
+.about-text p{
+color:#555;
+line-height:1.8;
+}
+
+.stats{
+margin-top:25px;
+display:flex;
+gap:40px;
+}
+
+.stats h3{
+color:#2563eb;
+font-size:28px;
+}
+
+/* TUGAS */
+
+.tugas{
+padding:80px 10%;
+background:#eef2f7;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card-number{
+width:60px;
+height:60px;
+background:#2563eb;
+color:white;
+margin:auto;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:#666;
+margin-bottom:20px;
+}
+
+.card a{
+display:inline-block;
+padding:10px 25px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+.about-card{
+flex-direction:column;
+text-align:center;
+}
+
+.stats{
+justify-content:center;
+}
+
+nav ul{
+gap:15px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">My Portfolio</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#tugas">Tugas</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Selamat Datang</h1>
+
+<p>
+Portofolio Mata Kuliah Grafika Komputer
+</p>
+
+<a href="#about" class="btn">
+Lihat Profil
+</a>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<div class="about-card">
+
+<img src="gambar 1.jpg">
+
+<div class="about-text">
+
+<h2>ESMOYOJATI</h2>
+
+<p>
+Halo, saya mahasiswa Program Studi Pendidikan Teknologi Informasi Universitas Lampung NPM 2513025021. Website ini berisi kumpulan tugas yang telah saya kerjakan selama perkuliahan Grafika Komputer.
+</p>
+
+<div class="stats">
+
+<div>
+<h3>9</h3>
+<span>Tugas</span>
+</div>
+
+<div>
+<h3>2025</h3>
+<span>Tahun</span>
+</div>
+
+<div>
+<h3>PTI</h3>
+<span>Prodi</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="tugas" id="tugas">
+
+<h2 class="section-title">Tugas Saya</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-number">1</div>
+<h3>Tokoh Perintis Grafika Komputer</h3>
+<a href="https://forms.gle/Ud5R3mmgo93aHV9U9" target="_blank">
+Lihat Tugas
+</a>
+</div>
+
+<div class="card">
+<div class="card-number">2</div>
+<h3>Sistem Grafika Komputer</h3>
+<a href="https://forms.gle/31s53vty1o6u3imA9" target="_blank">
+Lihat Tugas
+</a>
+</div>
+
+<div class="card">
+<div class="card-number">3</div>
+<h3>Algoritma Pembentukan Garis</h3>
+<a href="https://forms.gle/HkDi3yb3xZRDaTWy7" target="_blank">
+Lihat Tugas
+</a>
+</div>
+
+<div class="card">
+<div class="card-number">4</div>
+<h3>Algoritma Pembentukan Lingkaran</h3>
+<a href="https://forms.gle/num2To6782qTSqP38" target="_blank">
+Lihat Tugas
+</a>
+</div>
+
+<div class="card">
+<div class="card-number">5</div>
+<h3>Algoritma Pembentukan Kurva</h3>
+<a href="https://forms.gle/BSjtMWDiCU4rFeP27" target="_blank">
+Lihat Tugas
+</a>
+</div>
+
+<div class="card">
+<div class="card-number">6</div>
+<h3>Persamaan Misteri</h3>
+<a href="https://youtu.be/NXp3eBRchdc?si=6C4WfhJnmUNm0F02" target="_blank">
+Lihat Tugas
+</a>
+</div>
+
+<div class="card">
+<div class="card-number">7</div>
+<h3>Transformasi 2D</h3>
+<a href="https://youtu.be/uuSDaWpsJ0Y?si=0VfJ_MYUMrKSdFVD" target="_blank">
+Lihat Tugas
+</a>
+</div>
+
+<div class="card">
+<div class="card-number">8</div>
+<h3>Algoritma Pemotongan Garis</h3>
+<a href="https://youtu.be/ldqgjFteW0E?si=h011CEPyCbppoUUJ" target="_blank">
+Lihat Tugas
+</a>
+</div>
+
+<div class="card">
+<div class="card-number">9</div>
+<h3>Algoritma Pemotongan Poligon</h3>
+<a href="https://youtu.be/NaIUpdVLI98?si=9Ke43iPzOWehPrAH" target="_blank">
+Lihat Tugas
+</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2025 ESMOYOJATI | Portfolio Grafika Komputer
+</footer>
+
+</body>
+</html>
